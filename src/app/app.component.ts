@@ -49,42 +49,49 @@ export class AppComponent {
       this.itemArray[4] === this.itemArray[5]
     ) {
       this.winMessage = `${this.itemArray[3]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[6] !== 'empty' &&
       this.itemArray[6] === this.itemArray[7] &&
       this.itemArray[7] === this.itemArray[8]
     ) {
       this.winMessage = `${this.itemArray[6]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[0] !== 'empty' &&
       this.itemArray[0] === this.itemArray[3] &&
       this.itemArray[3] === this.itemArray[6]
     ) {
       this.winMessage = `${this.itemArray[0]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[1] !== 'empty' &&
       this.itemArray[1] === this.itemArray[4] &&
       this.itemArray[4] === this.itemArray[7]
     ) {
       this.winMessage = `${this.itemArray[1]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[2] !== 'empty' &&
       this.itemArray[2] === this.itemArray[5] &&
       this.itemArray[5] === this.itemArray[8]
     ) {
       this.winMessage = `${this.itemArray[2]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[0] !== 'empty' &&
       this.itemArray[0] === this.itemArray[4] &&
       this.itemArray[4] === this.itemArray[8]
     ) {
       this.winMessage = `${this.itemArray[0]} won`;
+      return this.toastr.success(this.winMessage)
     } else if (
       this.itemArray[2] !== 'empty' &&
       this.itemArray[2] === this.itemArray[4] &&
       this.itemArray[4] === this.itemArray[6]
     ) {
       this.winMessage = `${this.itemArray[2]} won`;
+      return this.toastr.success(this.winMessage)
     }
   };
   reloadGame() {

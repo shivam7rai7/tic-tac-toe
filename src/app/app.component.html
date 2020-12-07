@@ -5,6 +5,8 @@
       <div class="text-center">
         <h1 [hidden]="isCross" class="uppercase text-danger">Player One Turn</h1>
         <h1 [hidden]="!isCross" class="uppercase text-danger">Player Two Turn</h1>
+        <h1 *ngIf = 'winMessage' class="uppercase text-success">{{winMessage}}</h1>
+
       </div>
 
       <div class="grid">

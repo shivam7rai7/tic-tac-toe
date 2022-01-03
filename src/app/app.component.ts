@@ -98,7 +98,7 @@ export class AppComponent {
     this.winMessage = '';
     this.isCross = false;
     this.itemArray = new Array(9).fill('empty');
-
+   
   };
 
 }
